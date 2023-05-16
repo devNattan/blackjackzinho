@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/src/imgs/background.png');
+    margin: 0;
+}
+
+.top {
+    width: 100%;
+    height: 270px;
+    border: 5px solid white;
+    border-top: none;
+    background-image: url('/src/imgs/topBackground.png');
+    background-size: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.shuffle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.53);
+    border: 3px solid white;
+}
+.cards {
+    background-image: url('./imgs/cardsBase.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .cards > .card {
+    position: absolute;
+    width: 80%;
+  }
+  
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 56px;
+    font-size: 36px;
+    color: black;
+    background-color: white;
+    border-radius: 21px;
+  }
+  
+  .player-2.cards {
+    height: 112px;
+    width: 77px;
+  }
